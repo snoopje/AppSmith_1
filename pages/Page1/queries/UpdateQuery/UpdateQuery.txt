@@ -1,0 +1,13 @@
+UPDATE p."pricing_plan" SET
+		"opportunity_id" = '{{update_form.fieldState.opportunity_id.isVisible ? update_form.formData.opportunity_id : update_form.sourceData.opportunity_id}}',
+		"docusign_id" = '{{update_form.fieldState.docusign_id.isVisible ? update_form.formData.docusign_id : update_form.sourceData.docusign_id}}',
+    "merchant_name" = '{{update_form.fieldState.merchant_name.isVisible ? update_form.formData.merchant_name : update_form.sourceData.merchant_name}}',
+		"effective_date" = '{{update_form.fieldState.effective_date.isVisible ? update_form.formData.effective_date : update_form.sourceData.effective_date}}',
+		"is_amendment" = '{{update_form.fieldState.is_amendment.isVisible ? update_form.formData.is_amendment : update_form.sourceData.is_amendment}}',
+		"is_new_product_or_service" = '{{update_form.fieldState.is_new_product_or_service.isVisible ? update_form.formData.is_new_product_or_service : update_form.sourceData.is_new_product_or_service}}',
+		"is_non_standard_contract" = '{{update_form.fieldState.is_non_standard_contract.isVisible ? update_form.formData.is_non_standard_contract : update_form.sourceData.is_non_standard_contract}}',
+		"pricing_plan" = '{{update_form.fieldState.pricing_plan.isVisible ? update_form.formData.pricing_plan : update_form.sourceData.pricing_plan}}',
+		"created_at" = '{{update_form.fieldState.created_at.isVisible ? update_form.formData.created_at : update_form.sourceData.created_at}}',
+		"created_by" = '{{update_form.fieldState.created_by.isVisible ? update_form.formData.created_by : update_form.sourceData.created_by}}',
+		"updated_at" = '{{update_form.fieldState.updated_at.isVisible ? update_form.formData.updated_at : update_form.sourceData.updated_at}}'
+	WHERE "id" = {{data_table.selectedRow.id}};

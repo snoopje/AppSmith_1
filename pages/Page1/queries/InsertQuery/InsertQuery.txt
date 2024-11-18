@@ -1,0 +1,26 @@
+INSERT INTO p."pricing_plan" (
+	"opportunity_id",
+	"docusign_id",
+	"merchant_name",
+	"effective_date",
+	"is_amendment",
+	"is_new_product_or_service",
+	"is_non_standard_contract",
+	"pricing_plan",
+	"created_at",
+	"created_by",
+	"updated_at"
+)
+VALUES (
+	'{{insert_form.formData.opportunity_id}}',
+	'{{insert_form.formData.docusign_id}}',
+	'{{insert_form.formData.merchant_name}}',
+	'{{insert_form.formData.effective_date}}',
+	'{{insert_form.formData.is_amendment}}',
+	'{{insert_form.formData.is_new_product_or_service}}',
+	'{{insert_form.formData.is_non_standard_contract}}',
+	'{{insert_form.formData.pricing_plan}}',
+	'{{insert_form.formData.created_at}}',
+	'{{insert_form.formData.created_by}}',
+	'{{insert_form.formData.updated_at}}'
+);
